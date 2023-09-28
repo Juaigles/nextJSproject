@@ -29,13 +29,13 @@ const About = () => {
                     <p className={styles.desc}>¡Hola! Mi nombre es Juan María, y soy desarrollador web fullstack. He pasado varios años formandome en este mundo que me apasiona, y gracias a ello, a dia de hoy estoy más cerca de convertirme en el profesional que deseo.
                         <br />
                         <br />
-                        Mi formación en materia de desarrollo web, ha sido a cargo de la escuela de programación CODE4JOBS. En la cual, durante mi progreso en el curso he podido aprender a desenvolverme en difenrentes tecnologias web.
+                        Mi formación en materia de desarrollo web ha sido a cargo de la escuela de programación CODE4JOBS. En la cual, durante mi progreso en el curso he podido aprender a desenvolverme en diferentes tecnologías web.
                     </p>
                 </div>
                 <div className={styles.item}>
                     <h1 className={styles.title}>¿Qué capacidades tengo?</h1>
                     <p>
-                            Gracias a mi formación, he podido adquirir habilidad y conocimiento, en diferentes tecnologias del desarrollo web. Con la finalidad de transformar mi conocimiento junto a las herramientas, en una aplicacción Web moderna, responsiva y actual.
+                            Gracias a mi formación, he podido adquirir habilidad y conocimiento en diferentes tecnologias del desarrollo web con la finalidad de transformar mi conocimiento junto a las herramientas, en una aplicacción Web moderna, responsiva y actual.
                         
                      
                         <br />

@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.item}>
         <h1 className={styles.title}>Desarrollador web fullstack.</h1>
         <p className={styles.desc}>Avanzando poco a poco, y mejorando en el camino.</p>
-        <Button url="/portfolio" text="See Our Works"/>
+        <Button url="/portfolio" text="Ver portafolio"/>
        
 
       </div>
