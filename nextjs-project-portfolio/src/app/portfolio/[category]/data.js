@@ -2,70 +2,81 @@ export const items = {
     applications: [
       {
         id: 1,
-        title: "Creative Portfolio",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "App - Su Chófer Personal ",
+        repo:"",
+        url:"",
+        desc: "Aplicación mobil multiplataforma desarrollada en flutter, orientada a ofrecer un servicio personalizado de VTC en Salamanca.",
+        category: "app",
         image:
-          "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
+          "/app_images/app-login.png",
       },
-      {
-        id: 2,
-        title: "Minimal Single Product",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
-      },
-      {
-        id: 3,
-        title: "Strong Together Charity",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
-      }
+
     ],
-    illustrations: [
+    games: [
       {
         id: 1,
-        title: "Creative Portfolio",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Space Blast",
+        desc: "Primer juego 2D de práctica en Godot 4 para interiorizar conceptos del motor y lenguaje de programación GD Sript",
+        repo:"",
+        url:"",
+        category: "game",
         image:
-          "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
+          "/games/space-blast-intro.png",
       },
       {
         id: 2,
-        title: "Minimal Single Product",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Light & Dark",
+        repo:"",
+        url:"",
+        desc: "Juego 3D de terror actualmente en desarrollo en Unity 6, con una simple mecánica de encendido y apagado de linterna que modifica la realidad y lo que el jugador ve, con la finalidad de resolver puzzles y enigmas para avanzar.",
+        category: "game",
         image:
-          "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
+          "/games/terror1.png",
       },
-      {
-        id: 3,
-        title: "Strong Together Charity",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
-      }
+     
     ],
     websites: [
       {
         id: 1,
-        title: "Creative Portfolio",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Portafolio Juan María Iglesias Mateos",
+        repo:"https://github.com/Juaigles/nextJSproject",
+        url:"https://www.vtcsuchoferpersonal.com",
+        desc: "Mi portafolio web crado con Next14 y MongoDB con mongoose.",
+        category: "website",
+        
         image:
-          "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
+          "/webProjects/portfolio-home.png",
       },
       {
         id: 2,
-        title: "Minimal Single Product",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Taxi/VTC Su Chófer Personal",
+        repo:"https://github.com/Juaigles/web-taxi-vtc-su-chofer-personal",
+        url:"https://www.vtcsuchoferpersonal.com",
+        desc: "Página web dedicada a la información de servicios de VTC y taxi en la ciudad de Salamanca. Pagina desarrollada en Next 14, desplegada en Vercel. ",
+        category: "website",
+        
         image:
-          "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
+          "/webProjects/sucho-hero-home.png",
       },
       {
         id: 3,
-        title: "Strong Together Charity",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Task Manager con sistema de Login/Register",
+        repo:"https://github.com/Juaigles/Personal-Task-Manager",
+        url:"",
+        desc: "Web-app para la gestión de tareas con previo registro de usuario y base de datos que las almacena. Desarrollado en Vite con Express y Mongoose.",
+        category: "website",
         image:
-          "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
+          "/webProjects/login-task-manager.png",
+      },
+      {
+        id: 4,
+        title: "Goals App con UI ",
+        repo:"https://github.com/Juaigles/Focus-on-your-goals-APP",
+        url:"",
+        desc: "Web-app para la gestion visual de metas y objetivos. Con porcentaje segun progreso en la meta, y gestión de las metas con sistema CRUD.",
+        category: "website",
+        image:
+          "/webProjects/editar-metas.png",
       }
     ],
   };

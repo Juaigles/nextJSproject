@@ -7,11 +7,7 @@ import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { signOut, useSession } from "next-auth/react";
 
 const links = [
-  {
-    id: 1,
-    title: "Home",
-    url: "/",
-  },
+
   {
     id: 2,
     title: "Portafolio",
@@ -45,7 +41,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        Kiookai Page
+        Inicio
       </Link>
       <div className={styles.links}>
         <DarkModeToggle />

@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Footer = () => {
     return (
         <div className={styles.container}>
-            <div> ©2023 Juan María Iglesias. All rights reserved.</div>
+            <div> ©2024 Juan María Iglesias. All rights reserved.</div>
             <div className={styles.social}>
                 <Image src="/1.png" height={15} width={15} className={styles.icon} alt="Kiookai" />
                 <Image src="/2.png" height={15} width={15} className={styles.icon} alt="Kiookai" />

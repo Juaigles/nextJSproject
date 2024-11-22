@@ -6,6 +6,7 @@ import Button from '@/components/Button/Button';
 import Image from 'next/image';
 import { items } from "./data.js";
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 
 const getData = (cat) => {
   const data = items[cat]
@@ -27,8 +28,17 @@ const Category = ({ params }) => {
               <div className={styles.item} key={item.id}>
               <div className={styles.content}>
                 <h1 className={styles.title}>{item.title}</h1>
+                <div className={styles.links}>
+
+                {item.repo? <Link href={item.repo} className={styles.link}>Ver repositorio GitHub</Link>: <h2>(En desarrollo)</h2>}
+                {item.url? <Link href={item.url} className={styles.link}>Visitar la web</Link>: null}
+                </div>
+           
                 <p className={styles.desc}>{item.desc}</p>
-                <Button text="See More" url="#" />
+             
+            <Button url={`/portfolio/${item.category}/${item.id}`} text="Ver más"/>
+     
+           
               </div>
               <div className={styles.imgContainer}>
       

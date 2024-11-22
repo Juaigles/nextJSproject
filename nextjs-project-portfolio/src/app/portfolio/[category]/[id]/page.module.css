@@ -1,0 +1,38 @@
+.title{
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #53c28b;
+}
+.subtitle{
+    font-size: 30px;
+}
+
+.body{
+
+}
+
+.desc{
+    font-size: 20px;
+}
+
+
+.ul{
+    margin: 15px 100px;
+    font-size: 20px;
+    
+  
+}
+
+.li{
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    gap: 15px; /* Espacio entre componentes */
+    /*background-color: #1a1717;*/
+    padding: 50px;
+  }
+  

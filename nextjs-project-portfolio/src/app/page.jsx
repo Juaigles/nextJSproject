@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <h1 className={styles.title}>Desarrollador web fullstack.</h1>
-        <p className={styles.desc}>Avanzando poco a poco, y mejorando en el camino.</p>
+        <h1 className={styles.title}>Juan María Iglesias Mateos</h1>
+        <p className={styles.desc}>Desarrollador web fullstack.</p>
         <Button url="/portfolio" text="Ver portafolio"/>
        
 
