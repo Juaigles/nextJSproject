@@ -1,62 +1,212 @@
-.container{
-
+.container {
+    display: grid;
+    gap: 40px;
+    padding-bottom: 50px;
 }
 
-.catTitle{
+.catTitle {
     color: #53c28b;
 }
 
-.item{
-    display: flex;
-    gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+
+
+.link:hover {
+    color: #53c28b
 }
 
-.links{
-    display: flex;
-    gap: 15px;
-    
-}
 
-.link:hover{
-    color:#53c28b
-}
 
-.item:nth-child(2n+1){
-    flex-direction: row-reverse;
-}
-
-.imgContainer {
-    flex: 1;
-    height: 500px;
-    position: relative;
-    background-color: #000000; /* Color de fondo neutro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-
-.img {
-    object-fit: contain; /* Ajusta la imagen completamente al contenedor */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
-    height: 100%; /* Asegúrate de que ocupe toda la altura */
-  }
-  
-
-.content{
+.content {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+
 }
 
-.title{
-    font-size: 50px;
+
+
+.newdesc {
+
+
+    padding-inline: 30px;
+    text-align: center;
+
 }
 
-.desc{
-    font-size: 20px;
+.centeredImg {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newTitleDiv {
+    text-align: center;
+    margin: 30px 10px 10px 0px;
+}
+
+.newitem {
+  
+    display: grid;
+    gap: 20px;
+}
+
+.newImgContainer {
+    border: var(--primary-color) 1px solid;
+    display: flex;
+    /* Asegura que el contenedor se adapte */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    width: auto;
+    /* Ajusta automáticamente al contenido */
+    height: auto;
+    /* Ajusta automáticamente al contenido */
+    max-width: 100%;
+    /* Define un ancho máximo */
+    max-height: 100%;
+    /* Define una altura máxima */
+
+}
+
+.newimg {
+    object-fit: contain;
+    width: auto;
+    /* Ajusta automáticamente el ancho */
+    height: auto;
+    /* Ajusta automáticamente la altura */
+    max-width: 100%;
+    /* No excede el tamaño del contenedor */
+    max-height: 100%;
+    /* No excede el tamaño del contenedor */
+
+}
+
+.desarrollo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+.photoApp {
+    object-fit: contain;
+    max-width: 15%;
+}
+
+.newlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+
+    padding: 40px;
+}
+
+.newBody {
+
+    gap: 50px;
+
+}
+
+.newButton {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.newImgContainer .newimg {
+    width: 100%;
+    height: auto;
+    /* Mantiene proporciones */
+    object-fit: cover;
+    /* Ajusta la imagen al contenedor */
+}
+
+.centeredButton {
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1070px) {
+    .photoApp {
+        object-fit: contain;
+        /* Asegura que la imagen no se deforme */
+        max-width: 45%;
+        max-height: 100%;
+
+    }
+
+    .container {
+
+        display: grid;
+
+        padding-bottom: 50px;
+
+    }
+
+    .newitem {
+        display: grid;
+
+        border: var(--primary-color)1px solid;
+        gap: 20px;
+        /* Espaciado entre las celdas */
+        margin: 10px 0;
+
+        font-size: 1.5rem;
+    }
+
+
+
+    .newTitle {
+        grid-column: 1;
+        /* Primera columna */
+        grid-row: 1;
+        /* Primera fila */
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .centeredImg {}
+
+    .newImgContainer {
+
+        display: flex;
+        padding: 10px;
+        max-width: 100%;
+
+    }
+
+    .newimg {
+        object-fit: contain;
+        /* Asegura que la imagen no se deforme */
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .newBody {
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .newdesc {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .centeredButton {
+        display: flex;
+        align-items: center;
+        justify-content: flex-center;
+    }
 }

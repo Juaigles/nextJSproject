@@ -2,11 +2,25 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 0;
+   
+}
+.container:hover{
+    background-color: var(--primary-color);
+ 
+}
+.container:hover p{
+    color: black;
+ 
+}
+.imageContainer{
+    height: 100%;
+    margin: 5px;
 }
 
 .image{
     object-fit: cover;
+  
 }
 
 .content{
@@ -20,4 +34,41 @@
 .desc{
     font-size: 18px;
     color: #999;
+}
+
+
+@media(max-width:1070px){
+    .container{
+        display: grid;
+        border: var(--primary-color) 1px solid;
+       
+    }
+ 
+    .image{
+        object-fit: cover;
+        width: 75vw;
+    }
+    .imageContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      
+    }
+    .content{
+    
+    }
+    
+    .title{
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    
+    .desc{
+        font-size: 18px;
+        color: #999;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    
 }

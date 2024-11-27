@@ -25,7 +25,7 @@ const About = () => {
                 />
                 <div className={styles.imgText}>
                     <h1 className={styles.imgTitle}>Juan María Iglesias Mateos</h1>
-                    <h2 className={styles.imgDesc}>Desarrollador web fullstack</h2>
+                    <h3 className={styles.imgDesc}>Desarrollador web fullstack</h3>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className={styles.photo}>
-                        <Image src="/perfil.jpg" alt='perfil' fill={true}></Image>
+                        <Image src="/perfil.jpg" alt='perfil' width={300} height={400}></Image>
                     </div>
                 </div>
                 <div className={styles.skills}>
@@ -134,19 +134,19 @@ const About = () => {
 
                 <div className={styles.documents}>
                     <div className={styles.centeredText}>
-                    <h2 className={styles.cta}>Documentos</h2>
+                        <h2 className={styles.cta}>Documentos</h2>
 
                     </div>
                     <div className={styles.download}>
                         <div className={styles.certifications}>
-                            <h3 className={styles.centeredText}>Mis certificados:</h3>
+                        <h3 className={styles.centeredText}>Mis certificados:</h3>
                             <div className={styles.downloadField}>
                                 <div className={styles.gallery}>
                                     <ImageGallery images={imageArray} />
-                                    
+
 
                                 </div>
-                              
+
                             </div>
                         </div>
                         <div className={styles.cv}>
@@ -154,15 +154,15 @@ const About = () => {
                             <div className={styles.downloadField}>
                                 <div className={styles.gallery}>
 
-                                    <Image src={image.cv} width={300} height={300} />
+                                    <Image className={styles.cvPhoto} src={image.cv} width={600} height={700} />
 
-                                <div className={styles.centeredText}>
+                                    <div className={styles.centeredText}>
 
-                                    <div className={styles.button}>
+                                        <div className={styles.button}>
 
-                                        <Link href="/document/cv.pdf" download>Descargar</Link>
+                                            <Link href="/document/cv.pdf" download>Descargar</Link>
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@ const About = () => {
                 <div className={styles.ctaContainer}>
                     <div>
                         <div className={styles.centeredText}>
-                            <h3 className={styles.cta}>¿Hablamos?</h3>
+                            <h2 className={styles.cta}>¿Hablamos?</h2>
                         </div>
                         <div className={styles.finalText}>
                             <div className={styles.centeredp}>
@@ -182,8 +182,9 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.centeredText}>
-                        <Button url="/contact" text="Contactar" />
+                    <div className={styles.centeredText} >
+                        <Link href="/contact" className={styles.button}>Contactar</Link>
+                     
                     </div>
                 </div>
 

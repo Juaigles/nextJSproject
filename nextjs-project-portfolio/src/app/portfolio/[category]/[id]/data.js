@@ -21,11 +21,15 @@ export const items = {
       image: {
         1:{
          src: "/app_images/app-login.png",
-         alt: "app-login"
+         alt: "app-login",
+         cat: "app",
+         text:"Pantalla de inicio de sesión"
         },
         2:{
           src: "/app_images/app-register.png",
-          alt: "app-register"
+          alt: "app-register",
+           cat: "app",
+            text:"Pantalla de registro de nuevos usuarios"
          },
       }
     },
@@ -53,15 +57,18 @@ export const items = {
       image:{
         1:{
           src:"/games/space-blast-intro.png",
-          alt: "space-blast-intro"
+          alt: "space-blast-intro",
+           text:"Pantalla de inicio del juego"
         },
         2:{
           src:"/games/space-blast-combat.png",
-          alt: "space-blast-game-combat"
+          alt: "space-blast-game-combat",
+           text:"Pantalla del gameplay del juego"
         },
         3:{
           src:"/games/space-blast-fin.png",
-          alt: "space-blast-game-fin"
+          alt: "space-blast-game-fin",
+           text:"Pantalla de fin de partida"
         },
         
       }
@@ -84,27 +91,34 @@ export const items = {
       image:{
         1:{
           src: "/games/terror1.png",
-          alt: "terror1"
+          alt: "terror1",
+           text:"Imagen linterna encendida "
         },
         2:{
           src: "/games/terror2.png",
-          alt: "terror2"
+          alt: "terror2",
+           text:"Imagen con linterna encendida y pared oculta cerrada"
         },
         3:{
           src: "/games/terror3.png",
           alt: "terror3"
+          ,
+           text:"Imagen con linterna apagada y pared oculta abierta"
         },
         4:{
           src: "/games/terror4.png",
-          alt: "terror4"
+          alt: "terror4",
+           text:"Imagen parcial del puzzle (1/2) al apagar la luz de la linterna"
         },
         5:{
           src: "/games/terror5.png",
-          alt: "terror5"
+          alt: "terror5",
+           text:"Imagen parcial del puzzle (2/2) al encender la luz de la linterna"
         },
         6:{
           src: "/games/terror6.png",
-          alt: "terror6"
+          alt: "terror6",
+           text:"Imagen del desarrollo en Unity que muestra el puzzle anterior completo con un '100' formado con losetas"
         },
       }
        
@@ -135,45 +149,101 @@ export const items = {
         image:{
           1:{
             src: "/webProjects/portfolio-home.png",
-            alt: "portfolio-home"
+            alt: "portfolio-home",
+            text:"Página Home tamaño Desktop con el tema oscuro"
           },
+          19:{
+            src: "/webProjects/homeBlackMobile.png",
+            alt: "portfolio-homeMobile",
+            text:"Página Home tamaño Mobile con el tema oscuro",
+            cat:"app"
+          },
+         
           2:{
             src: "/webProjects/portfolio-blanco-home.png",
-            alt: "blanco-home"
+            alt: "blanco-home",
+            text:"Página Home tamaño Desktop con el tema blanco"
+          },
+          20:{
+            src: "/webProjects/homeWhiteMobile.png",
+            alt: "portfolio-homeMobile",
+            text:"Página Home tamaño Mobile con el tema oscuro",
+            cat:"app"
           },
     
           4:{
             src: "/webProjects/portfolio-portfolio.png",
-            alt: "portfolio"
+            alt: "portfolio",
+            text :"Página general del portafolio tamaño Desktop"
+          },
+          11:{
+            src: "/webProjects/portafolioMobile.png",
+            alt: "portfolio-homeMobile",
+            text:"Página de categorías del portafolio en tamaño mobile",
+            cat:"app"
           },
           5:{
             src: "/webProjects/portfolio-trabajos.png",
-            alt: "trabajos"
+            alt: "trabajos",
+            text:"Página de mis trabajos 'Website' del portafolio en tamaño Desktop",
+          },
+          12:{
+            src: "/webProjects/portafolioCat.png",
+            alt: "portfolio-homeMobile",
+            text:"Página categoria de mis trabajos 'Website' tamaño Mobile",
+            cat:"app"
           },
           6:{
             src: "/webProjects/portfolio-trabajos-proyecto.png",
-            alt: "proyectos"
+            alt: "proyectos",
+            text:"Página resumen del proyecto seleccionado tamaño Desktop"
+          },  13:{
+            src: "/webProjects/misTrabajosMobile.png",
+            alt: "portfolio-homeMobile",
+            text:"Página resumen del proyecto seleccionado tamaño Mobile",
+            cat:"app"
           },
           7:{
             src: "/webProjects/portfolio-login.png",
-            alt: "portfolio-login"
+            alt: "portfolio-login",
+            text:"Página de inicio de sesión tamaño Desktop"
           },
           8:{
-            src: "/webProjects/portfolio-crear-post.png",
-            alt: "portfolio-contacto"
+            src: "/webProjects/dashBoardDesktop.png",
+            alt: "portfolio-blog-ejemplo",
+            text: "Página de dasboard tamaño Desktop"
           },
+        
+        
           9:{
-            src: "/webProjects/portfolio-blog-general.png",
-            alt: "portfolio-blog-general"
+            src: "/webProjects/blogPostDesktop.png",
+            alt: "portfolio-blog-general",
+            text: "Página general del Blog tamaño Desktop"
+          },  14:{
+            src: "/webProjects/blogPostMobile.png",
+            alt: "portfolio-homeMobile",
+            text:"Página del blog general tamaño Mobile",
+            cat:"app"
           },
           10:{
-            src: "/webProjects/portfolio-blog-ejemplo.png",
-            alt: "portfolio-blog-ejemplo"
+            src: "/webProjects/blogDesktop.png",
+            alt: "portfolio-blog-ejemplo",
+            text: "Página de artículo del blog en tamaño Desktop"
           },
+          
           11:{
             src: "/webProjects/portfolio-blanco.png",
-            alt: "portfolio-blanco"
+            alt: "portfolio-blanco",
+            text:"Pagina de la categoria Juegos con el tema blanco"
           },
+      
+          18:{
+            src: "/webProjects/crearPostMobile.png",
+            alt: "portfolio-blog-ejemplo",
+            text: "Página de dashboard tamaño Mobile",
+            cat: "app"
+          },
+
       
         
         }
@@ -202,28 +272,84 @@ export const items = {
         
         image:{
           1:{
-            src: "/webProjects/sucho-hero-home.png",
-            alt: "hero-suchoferpersonal"
+            src: "/webProjects/suChoferPersonal/desktop/sucho-hero-desktop.png",
+            alt: "hero-suchoferpersonal",
+            text:"Página Home version Desktop"
+
           },
           2:{
-            src: "/webProjects/sucho-botones.png",
-            alt: "suchoferpersonal-botones"
+            src: "/webProjects/suChoferPersonal/desktop/sucho-buttons-desktop.png",
+            alt: "suchoferpersonal-botones",
+            text:"Apartado de botones dinámicos version Desktop"
           },
           3:{
-            src: "/webProject/sucho-galeria-imagenes.png",
-            alt: "suchoferpersonal-galeria"
+            src: "/webProjects/suChoferPersonal/desktop/sucho-gallery-desktop.png",
+            alt: "suchoferpersonal-galeria",
+            text:"Componente de Galería de imágenes version Desktop"
           },
           4:{
-            src: "/webProjects/sucho-mapas.png",
-            alt: "suchoferpersonal-mapas"
+            src: "/webProjects/suChoferPersonal/desktop/sucho-contact-desktop.png",
+            alt: "suchoferpersonal-mapas",
+            text:"Componente formulario de contacto version Desktop"
           },
           5:{
-            src: "/webProjects/sistema-reseñas-google.png",
-            alt: "suchoferpersonal-reseñas"
+            src: "/webProjects/suChoferPersonal/desktop/sucho-reviews-desktop.png",
+            alt: "suchoferpersonal-reseñas",
+            text:"Componente de reseñas de Google version Desktop"
           },
           6:{
-            src: "/webProjects/sistema-reseñas-google.png",
-            alt: "suchoferpersonal-blog-SEO"
+            src: "/webProjects/suchoBlogSeo.png",
+            alt: "suchoferpersonal-blog-SEO",
+            text:"Componente de Blog para la mejora del SEO en la web"
+          },
+          7:{
+            src: "/webProjects/suChoferPersonal/mobile/sucho-hero-mobile.png",
+                        alt: "hero-suchoferpersonal",
+            text:"Página Home version Mobile",
+            cat:"app"
+          },
+          8:{
+            src: "/webProjects/suChoferPersonal/mobile/sucho-main-mobile.png",
+           alt: "suchoferpersonal-main mobile",
+            text:"Apartado princial en Mobile",
+            cat:"app"
+          },
+          9:{
+            src: "/webProjects/suChoferPersonal/mobile/sucho-buttons-mobile.png",
+            alt: "suchoferpersonal-botones mobile",
+            text:"Apartado de botones dinámicos version Mobile",
+            cat:"app"
+          },
+          10:{
+            src: "/webProjects/suChoferPersonal/mobile/sucho-google.png",
+             alt: "suchoferpersonal-reseñas mobile",
+            text:"Componente de reseñas de Google version Mobile",
+            cat:"app"
+          },
+          11:{
+            src: "/webProjects/suChoferPersonal/mobile/sucho-reviews-mobile.png",
+             alt: "suchoferpersonal-reseñas mobile",
+            text:"Componente de reseñas estilizado Mobile",
+            cat:"app"
+          },
+          12:{
+            src: "/webProjects/suChoferPersonal/mobile/blogButtonMobile.png",
+            alt: "suchoferpersonal-blog-SEO mobile",
+            text:"Componente de Blog para la mejora del SEO en la web",
+            cat:"app"
+          },
+
+          13:{
+            src: "/webProjects/suChoferPersonal/mobile/suchoContactMobile.png",
+            alt: "suchoferpersonal-contacto-mobile",
+            text:"Componente de formulario de contacto",
+            cat:"app"
+          },
+          14:{
+            src: "/webProjects/suChoferPersonal/mobile/suchoFooter-Mobile.png",
+            alt: "suchoferpersonal-footer-mobile",
+            text:"Componente de footer en versión Mobile",
+            cat:"app"
           },
         
         }
@@ -250,20 +376,24 @@ export const items = {
         
         image:{
           1:{
-            src: "/webProjects/task-manager-home.png",
-            alt: "task-home"
+            src: "/webProjects/taskManager/task-manager-home.png",
+            alt: "task-home",
+            text: "Página principal del oganizador de tareas"
           },
           2:{
-            src: "/webProjects/task-dashboard.png",
-            alt: "task-dashboard"
+            src: "/webProjects/taskManager/task-dashboard.png",
+            alt: "task-dashboard",
+            text: "Página del dashboard del usuario donde almacena sus tareas"
           },
           3:{
-            src: "/webProject/task-creator.png",
-            alt: "task-creator"
+            src: "/webProjects/taskManager/task-creator.png",
+            alt: "task-creator",
+            text: "Componente para crear las tareas"
           },
           4:{
-            src: "/webProjects/register-task-manager.png",
-            alt: "register-task"
+            src: "/webProjects/taskManager/register-task-manager.png",
+            alt: "register-task",
+            text: "Formulario de registro para que cada usuario tenga acceso solo a sus tareas"
           },
      
         
@@ -290,16 +420,15 @@ export const items = {
         
         image:{
           1:{
-            src: "/webProjects/metas-app-metas.png",
-            alt: "metas-app-metas"
+            src: "/webProjects/metasApp/metas-app-metas.png",
+            alt: "metas-app-metas",
+            text: "Página principal donde ves el avance y resumen de tus metas"
           },
+        
           2:{
-            src: "/webProjects/metas-app.png",
-            alt: "metas-app"
-          },
-          3:{
-            src: "/webProject/editas-metas.png",
-            alt: "editar-metas"
+            src: "/webProjects/metasApp/editar-metas.png",
+            alt: "editar-metas",
+          text: "Menú para editar o borrar las metas"
           },
      
         

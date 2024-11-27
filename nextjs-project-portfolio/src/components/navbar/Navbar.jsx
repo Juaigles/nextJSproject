@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React , {useContext, useState} from "react";
 import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { signOut, useSession } from "next-auth/react";
+import { ThemeContext } from "@/context/ThemeContext";
 
 const links = [
 
@@ -37,17 +38,25 @@ const links = [
 
 const Navbar = () => {
   const session = useSession();
+  const [isOpen, setIsOpen] = useState(false);
+  const {mode} = useContext(ThemeContext);
+
+const toggleMenu = () => {
+  setIsOpen(!isOpen)
+}
 
   return (
-    <div className={styles.container}>
-      <Link href="/" className={styles.logo}>
+    <div className={`${styles.container} ${mode === "dark" ? styles.dark : styles.light}`}>
+      <Link href="/" className={styles.logo} onClick={() => isOpen && toggleMenu()}>
         Inicio
       </Link>
-      <div className={styles.links}>
+      <button className={styles.menuToggle} onClick={toggleMenu} aria-label="Abrir menú">☰</button>
+      <div className={`${styles.links} ${isOpen ? (mode == "dark" ? styles.darkTheme : styles.lightTheme) :  ""}`}>
         <DarkModeToggle />
         {links.map((link) => (
-          <Link key={link.id} href={link.url} className={styles.link}>
+          <Link key={link.id} href={link.url} onClick={() => isOpen && toggleMenu()} className={styles.link}>
             {link.title}
+            
           </Link>
         ))}
         {session.status === "authenticated" && (

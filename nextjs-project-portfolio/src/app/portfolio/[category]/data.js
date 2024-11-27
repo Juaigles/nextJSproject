@@ -5,6 +5,7 @@ export const items = {
         title: "App - Su Chófer Personal ",
         repo:"",
         url:"",
+        
         desc: "Aplicación mobil multiplataforma desarrollada en flutter, orientada a ofrecer un servicio personalizado de VTC en Salamanca.",
         category: "app",
         image:
@@ -45,7 +46,7 @@ export const items = {
         category: "website",
         
         image:
-          "/webProjects/portfolio-home.png",
+          "/webProjects/portfolio/desktop/portfolio-home.png",
       },
       {
         id: 2,
@@ -56,7 +57,7 @@ export const items = {
         category: "website",
         
         image:
-          "/webProjects/sucho-hero-home.png",
+          "/webProjects/suChoferPersonal/desktop/sucho-hero-desktop.png",
       },
       {
         id: 3,
@@ -66,7 +67,7 @@ export const items = {
         desc: "Web-app para la gestión de tareas con previo registro de usuario y base de datos que las almacena. Desarrollado en Vite con Express y Mongoose.",
         category: "website",
         image:
-          "/webProjects/login-task-manager.png",
+          "/webProjects/taskManager/login-task-manager.png",
       },
       {
         id: 4,
@@ -76,7 +77,7 @@ export const items = {
         desc: "Web-app para la gestion visual de metas y objetivos. Con porcentaje segun progreso en la meta, y gestión de las metas con sistema CRUD.",
         category: "website",
         image:
-          "/webProjects/editar-metas.png",
+          "/webProjects/metasApp/editar-metas.png",
       }
     ],
   };

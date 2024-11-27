@@ -1,29 +1,194 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.carousel h3{
+  color: var(--primary-color);
+  text-align: center;
+}
+.content{
+  width: 80%;
 
+}
+
+.imageContainer {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  
+}
+
+.imageApp {
+ border: var(--primary-color) 1px solid;
+  border-radius: 8px;
+  object-fit: contain;
+  /* Cambiado de 'cover' a 'contain' */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  height: 100%;
+}
+
+.image {
+  border: var(--primary-color) 1px solid;
+  border-radius: 8px;
+  object-fit: contain;
+  /* Cambiado de 'cover' a 'contain' */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 8px 16px;
+  border-radius: 50%;
+}
+
+
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prevButtonApp,
+.nextButtonApp {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+.prevButtonApp {
+  left: 1px;
+}
+
+.nextButtonApp {
+  right: 1px;
+}
+
+.prevButtonApp:hover,
+.nextButtonApp:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.button {
+
+  padding: 20px;
+  margin: 15px;
+
+  cursor: pointer;
+  background-color: #53c28b;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+
+}
+
+@media (max-width: 1070px) {
   .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    display: grid;
+
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
+    /* Ocupa el ancho completo */
+
+    max-width: 100%;
+    /* Elimina la limitación de ancho */
+
+  }
+  .content{
+    width: 100%;
+  
   }
 
   .imageContainer {
-    flex: 1;
+
+    width: 100%;
+    /* Ocupa todo el ancho */
     text-align: center;
-    position: relative;
+    margin-bottom: 10px;
+
   }
+
+  .imageApp {
+    border-radius: 8px;
+    object-fit: contain;
+    /* Cambiado de 'cover' a 'contain' */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 100%;
+  }
+
 
   .image {
     border-radius: 8px;
-    object-fit: contain; /* Cambiado de 'cover' a 'contain' */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    /* Asegura que no se recorten las imágenes */
     width: 100%;
-    height: 100%;
+    /* Se ajusta al ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
+
+  .prevButton {
+    left: 1px;
+
+  }
+
+  .nextButton {
+    right: 2px;
+  }
+
+  .prevButtonApp {
+    left: 1px;
+
+  }
+
+  .nextButtonApp {
+    right: 2px;
+  }
 
   .prevButton,
   .nextButton {
@@ -38,36 +203,117 @@
     z-index: 10;
     padding: 8px 16px;
     border-radius: 50%;
+
+  }
+
+  .prevButtonApp,
+  .nextButtonApp {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 8px 16px;
+    border-radius: 50%;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    display: grid;
+
+    width: 100%;
+    /* Ocupa el ancho completo */
+
+    max-width: 100%;
+    /* Elimina la limitación de ancho */
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content{
+    width: 100%;
+  
+  }
+
+  .imageContainer {
+border: var(--primary-color) 1px solid;
+border-radius: 8px;
+    width: 100%;
+    /* Ocupa todo el ancho */
+    text-align: center;
+    margin-bottom: 10px;
+
+  }
+
+  .imageApp {
+    border-radius: 8px;
+    object-fit: contain;
+    /* Cambiado de 'cover' a 'contain' */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .image {
+    border-radius: 8px;
+    object-fit: contain;
+    /* Asegura que no se recorten las imágenes */
+    width: 100%;
+    /* Se ajusta al ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .prevButton {
-    left: 10px;
+    left: 1px;
+
   }
 
   .nextButton {
-    right: 10px;
+    right: 2px;
   }
 
-  .prevButton:hover,
-  .nextButton:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-}
-  .button{
-   
-    padding: 20px;
-    margin: 15px;
-    
-    cursor: pointer;
-    background-color: #53c28b;
-    border: none;
-    border-radius: 5px;
-    width: max-content;
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-  
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 8px 16px;
+    border-radius: 50%;
+
+  }
+
+
+  .prevButtonCertificate,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 8px 16px;
+    border-radius: 50%;
+
+  }
+
+
 }

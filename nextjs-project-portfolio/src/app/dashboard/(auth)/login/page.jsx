@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { getProviders, signIn, useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { Loading } from "@/components/Loading/Loading";
 
 const Login = ({ url }) => {
   const session = useSession();
@@ -18,7 +19,7 @@ const Login = ({ url }) => {
   }, [params]);
 
   if (session.status === "loading") {
-    return <p>Loading...</p>;
+    return <Loading></Loading>;
   }
 
   if (session.status === "authenticated") {
@@ -37,46 +38,54 @@ const Login = ({ url }) => {
   };
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>{success ? success : "¡Bienvenido!"}</h1>
-      <h2 className={styles.subtitle}>Por favor inicia sesión para poder ver el Dashboard.</h2>
+    <div className={styles.centerDiv}>
 
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <input
-          type="text"
-          placeholder="Email"
-          required
-          className={styles.input}
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          required
-          className={styles.input}
-        />
+      <div className={styles.container}>
+        <h1 className={styles.title}>{success ? success : "¡Bienvenido!"}</h1>
+        <h2 className={styles.subtitle}>Por favor inicia sesión para poder ver el Dashboard.</h2>
+
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <input
+            type="text"
+            placeholder="Email"
+            required
+            className={styles.input}
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            required
+            className={styles.input}
+          />
+        </form>
         <button className={styles.button}>Iniciar Sesión</button>
         {error && error}
-      </form>
-      <button
-        onClick={() => {
-          signIn("google");
-        }}
-        className={styles.button + " " + styles.google}
-      >
-        Inicia sesión con Google
-      </button>
-      <span className={styles.or}>- O -</span>
-      <Link className={styles.link} href="/dashboard/register">
-        Crear nueva cuenta
-      </Link>
-      {/* <button
+        <button
+          onClick={() => {
+            signIn("google");
+          }}
+          className={styles.button + " " + styles.google}
+        >
+          Inicia sesión con Google
+        </button>
+        <div className={styles.links}>
+          <div className={styles.linksCentered}>
+
+          <span className={styles.or}>- O -</span>
+          <Link className={styles.link} href="/dashboard/register">
+            Crear nueva cuenta
+          </Link>
+          </div>
+        </div>
+        {/* <button
         onClick={() => {
           signIn("github");
-        }}
-        className={styles.button + " " + styles.github}
-      >
-        Login with Github
-      </button> */}
+          }}
+          className={styles.button + " " + styles.github}
+          >
+          Login with Github
+          </button> */}
+      </div>
     </div>
   );
 };

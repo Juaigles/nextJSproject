@@ -1,27 +1,43 @@
-.container{
-    
-  }
 
-.imgContainer{
+.container{
+    margin: 5% 5%;
+}
+.container h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.imgText h2{
+    
+}
+  
+   
+
+
+.container p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.imgContainer {
     width: 100%;
     height: 300px;
     position: relative;
 }
 
-.img{
+.img {
     object-fit: cover;
     filter: grayscale(100%);
 }
-.photo {
-    width: 2920px; /* Ajusta el ancho del contenedor */
-    height: 500px; /* Mantén la proporción si deseas que se ajuste verticalmente */
-    position: relative; /* Necesario para que fill funcione correctamente */
-    float: right; /* Flota la imagen a la derecha */
-    margin: 0 0 20px 20px; /* Añade espacio alrededor */
-  }
-  
 
-.imgText{
+
+
+.filosophy p {
+    font-size: 1.5rem;
+}
+
+
+.imgText {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -30,52 +46,57 @@
     color: white;
 }
 
-.aboutMe{
+.aboutMe {
     display: flex;
     margin: 50px 20px 0px 0px;
-    gap: 10px;
+    gap: 50px;
 }
 
-.title{
+.title {
     margin-bottom: 5px;
     font-size: 30px;
 }
 
-.subtitle{
+.subtitle {
     margin-bottom: 5px;
     font-size: 25px;
 }
-.textContainer p ,.textContainer h3, .textContainer h2{
+
+.textContainer p,
+.textContainer h3,
+.textContainer h2 {
     margin-bottom: 20px;
 }
-.centeredp{
-    font-size: 30px;
+
+.centeredp {
+    font-size: 2rem;
     text-align: center;
-    width: 1000px;
-    margin-bottom: 15px;
+    justify-content: left;
+
 }
-.finalText{
+
+.finalText {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.textContainer li{
+.textContainer li {
     margin-bottom: 30px;
     margin-left: 50px;
 }
 
-.text{
+.text {
     font-size: 20px;
 }
 
-.textContainer{
+.textContainer {
     display: flex;
     gap: 100px;
     flex-direction: column;
 }
 
-.item{
+.item {
     flex: 1;
     margin-top: 50px;
     display: flex;
@@ -83,98 +104,374 @@
     gap: 30px;
 }
 
-.desc{
+.desc {
     font-size: 18px;
     font-weight: 300;
-    text-align: justify;
+    text-align: left;
 }
-.centeredText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-.studies{
-    display: flex;
-    font-size: 20px;
-    
-}
-.studiesTitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.documents{
+
+.studiesContainer {
+    border: #53c28b 1px solid;
     display: grid;
-    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+   
+
+   
+}
+
+.studies {
+    display: grid;
+    font-size: 1.5rem;
+    
+    
 
 }
-.download{
+
+.studiesTitle {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 15%;
-    font-size: 20px;
+    justify-content: center;
+}
+
+
+.centeredText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
 
-.downloadField{
+.documents {
+    display: grid;
+
+
+
+
+
+}
+
+.download {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+    margin-top: 15px;
+
+}
+
+.downloadField {
 
     display: grid;
     align-items: center;
     justify-items: center;
-    gap: 10px;
 
-    height: 500px;
+
+
 }
 
-.gallery{
+.gallery {
 
     display: grid;
-    
+
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 400px;
 
-  
+
 }
 
 .certifications,
 .cv {
-  width: 100%; /* Ambos bloques ocupan el 48% del ancho para dejar espacio entre ellos */
- /* Fondo blanco */
-  padding: 20px; /* Espaciado interno */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para destacar los bloques */
-  box-sizing: border-box; 
-
-}
-
-.cv{
-    display: table-column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.button{
-   margin-top: 30px;
+    width: 100%;
+    /* Ambos bloques ocupan el 48% del ancho para dejar espacio entre ellos */
+    /* Fondo blanco */
     padding: 20px;
-    
+    /* Espaciado interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional para destacar los bloques */
+
+
+}
+
+
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    padding: 20px;
+
     cursor: pointer;
     background-color: #53c28b;
     border: none;
     border-radius: 5px;
     width: max-content;
     color: white;
+    font-size: 1.2rem;
+
+}
+
+
+.ctaContainer {
+    border: #53c28b 1px solid;
+    padding: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.cta {
+
+    font-size: 3rem;
+}
+
+
+@media (max-width: 1070px) {
   
+      
+    .container h1{
+        text-align: center;
+    }
+    .container h3{
+        font-size: 2rem;
+    }
+    .imgDesc{
+        font-size: 1rem;
+        }
+    .container h2 {
+        font-size: 2.5rem;
+    }
+    .container h2, .container h3{
+        text-align: center;
+    }
+
+    .container p,.container li{
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    .container{
+        margin: 5%;
+    }
+    .ul{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .textContainer {
+        display: flex;
+    }
+
+    .download {
+        display: grid;
+
+
+    }
+
+
+    .studiesContainer {
+        border: none;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        
+      
+    }
+
+    .studiesContainer h3 {
+     
+      font-size: 2.5rem; 
+     
+    }
+
+    .studies {
+  
+        display: grid;
+        
+
+    }
+  
+
+    .aboutMe {
+        display: grid;
+    }
+
+    .photo {
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+
+
+    .gallery {
+        width: 100%;
+    }
+    .cvPhoto{
+       width: 300px;
+       height: 400px;
+    }
+
+    .downloadField {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+    }
+
+
+    .documents {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+
+
+    .studiesTitle {
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download {
+        display: grid;
+
+    }
+
+    .cta{
+        font-size: 2rem;
+    }
+
+
 }
 
+@media (max-width: 480px) {
+    
+    .container h1{
+        text-align: center;
+    }
+    .container h2 {
+        font-size: 1.8rem;
+    }
+    .container h2, .container h3{
+        text-align: center;
+    }
 
-.ctaContainer{
+    .container p,.container li{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .container{
+        margin: 0;
+    }
+    .ul{
+        margin: 0;
+        padding: 0;
+        
+    }
 
-}
-.cta{
-    font-size: 60px;
+    .textContainer {
+        display: flex;
+    }
+
+    .download {
+        display: grid;
+
+
+    }
+
+
+    .studiesContainer {
+        border: none;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 0 100px;
+        
+      
+    }
+
+    .studiesContainer h3 {
+     
+      font-size: 2.5rem; 
+     
+    }
+
+    .studies {
+  
+        display: grid;
+        
+
+    }
+  
+
+    .aboutMe {
+        display: grid;
+    }
+
+    .photo {
+
+        width: 100%;
+    }
+
+
+
+    .gallery {
+        width: 100%;
+    }
+    .cvPhoto{
+       width: 300px;
+       height: 400px;
+    }
+
+    .downloadField {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+    }
+
+
+    .documents {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+
+
+    .studiesTitle {
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download {
+        display: grid;
+
+    }
+
+    .cta{
+        font-size: 2rem;
+    }
+
+
 }

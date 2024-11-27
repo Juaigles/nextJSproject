@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 const Button = ({ text, url }) => {
     return (
-        <Link href={url}>
-            <div className={styles.container}>
+        <Link  href={url}  >
+        <div className={styles.container}>
                 {text}
-            </div>
-        </Link>
+        </div>
+            </Link>
     )
 }
 

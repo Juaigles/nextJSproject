@@ -24,37 +24,39 @@ const ImageGallery = ({ images }) => {
 
     return (
         <div className={styles.carousel}>
-            <button className={styles.prevButton} onClick={handlePrev}>
-                &lt;
-            </button>
+            <div className={styles.content}>
+                <div className={styles.imageContainer}>
+                    <button className={`${styles.prevButton} ${images[currentIndex].cat ? styles.prevButtonApp : ""}`} onClick={handlePrev}>
+                        &lt;
+                    </button>
 
-            <div className={styles.imageContainer}>
-                <Image
-                    src={images[currentIndex].src ? images[currentIndex].src : setCurrentIndex(0)}
-                    alt={images[currentIndex].alt}
-                    width={800}
-                    height={500}
-                    className={styles.image}
-                    priority
+                    <Image
+                        src={images[currentIndex].src ? images[currentIndex].src : setCurrentIndex(0)}
+                        alt={images[currentIndex].alt}
+                        width={800}
+                        height={500}
+                        className={images[currentIndex].cat ? styles.imageApp : styles.image}
+                        priority
                     />
-                    <h3>{images[currentIndex].text}</h3>
-{
-    images[currentIndex].button ?
-                <div className={styles.center}>
+                    <button className={`${styles.nextButton} ${images[currentIndex].cat ? styles.nextButtonApp : ""}`} onClick={handleNext}>
+                        &gt;
+                    </button>
+                </div>
+                <h3>{images[currentIndex].text}</h3>
+                {
+                    images[currentIndex].button ?
+                        <div className={styles.center}>
 
-                    <div className={styles.button}>
-                        <Link href="/document/[documentId]" as={`/document/${images[currentIndex].button}`} passHref download>
-                            Descargar
-                        </Link>
-                    </div>
+                            <div className={styles.button}>
+                                <Link href="/document/[documentId]" as={`/document/${images[currentIndex].button}`} passHref download>
+                                    Descargar
+                                </Link>
+                            </div>
 
-                </div>  : ""
-}
+                        </div> : ""
+                }
+
             </div>
-
-            <button className={styles.nextButton} onClick={handleNext}>
-                &gt;
-            </button>
         </div>
     );
 };

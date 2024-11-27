@@ -1,28 +1,156 @@
-.container{
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 4%;
+}
+
+.form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+.input {
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid #bbb;
+  color: #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button {
+  width: 300px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #53c28b;
+  border: none;
+  border-radius: 5px;
+  color: #eee;
+  font-weight: bold;
+}
+
+.link {
+  font-size: 0.8rem;
+}
+
+.linksCentered{
+  display: grid;
+  height: 100px;
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+
+.link {
+  font-size: 1rem;
+}
+.link {
+  text-decoration: underline;
+  color: #7d7c7c;
+}
+
+.link:hover {
+  color: rgb(61, 61, 61);
+}
+
+
+@media(min-width: 480px) {
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-content: center;
+    margin: 4%;
+    transform: scale(1.5);
+    /* Escala al 90% */
+    transform-origin: center;
+    /* Mantiene el escalado centrado */
+    transition: transform 0.3s ease-in-out;
+
   }
-  
-  .form{
+}
+
+@media(min-width: 1070px) {
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+
+
+    transform: scale(1.2);
+    /* Escala al 90% */
+    transform-origin: center;
+    /* Mantiene el escalado centrado */
+    transition: transform 0.3s ease-in-out;
+    /* Animación opcional */
+  }
+
+  .form {
     width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  
-  .input{
+
+  .subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #bbb;
+  }
+
+  .input {
     padding: 20px;
     background-color: transparent;
     border: 2px solid #bbb;
-    color:#bbb;
+    color: #bbb;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
   }
-  
+
   .button {
     width: 300px;
     padding: 20px;
@@ -33,3 +161,12 @@
     color: #eee;
     font-weight: bold;
   }
+
+  .linksCentered{
+    display: grid;
+    height: 100px;
+    margin-top: 20px;
+
+    text-align: center;
+  }
+}

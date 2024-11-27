@@ -1,10 +1,10 @@
 .container{
-    
+    margin: 5%;
   }
 
 .title{
   font-size: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
   text-align: center;
 }
 .content{
@@ -23,7 +23,18 @@
   object-fit: contain;
   animation: move 3s infinite ease alternate;
 }
-
+.centeredButon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading{
+  margin-top: 100px;
+  border: var(--primary-color) 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @keyframes move {
   from{
     transform: translateY(-15px);
@@ -49,4 +60,48 @@
   border: 3px solid #bbb;
   font-size: 20px;
   font-weight: bold;
+}
+
+
+@media(max-width: 1070px){
+
+  .title{
+    font-size: 3rem;
+  
+    text-align: center;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+ 
+
+
+  }
+
+  .imgContainer{
+    display: none;
+  }
+
+  .form{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70vw;
+  }
+
+  .content{
+ 
+    display: flex;
+    flex-direction: column;
+  
+  
+
+  }
+  .centeredButon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
 }

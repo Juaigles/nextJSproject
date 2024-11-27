@@ -25,7 +25,10 @@ const Contact = () => {
           <input type="text" placeholder='Nombre' className={styles.input} />
           <input type="text" placeholder='Email' className={styles.input} />
           <textarea className={styles.textArea} placeholder='Escribe tu mensaje' cols="30" rows="10"></textarea>
-          <Button url='#' text="Enviar" />
+          <div className={styles.centeredButon}>
+
+            <Button url='#' text="Enviar" />
+          </div>
         </div>
       </div>
 

@@ -5,6 +5,7 @@ import useSWR from "swr";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { Loading } from "@/components/Loading/Loading";
 
 const Dashboard = () => {
 
@@ -45,9 +46,7 @@ const Dashboard = () => {
     fetcher
   );
 
-  if (session.status === "loading") {
-    return <p>Loading...</p>;
-  }
+
 
   if (session.status === "unauthenticated") {
     router?.push("/dashboard/login");
@@ -92,26 +91,9 @@ const Dashboard = () => {
   if (session.status === "authenticated") {
     return (
       <div className={styles.container}>
-        <div className={styles.posts}>
-          {isLoading
-            ? "loading"
-            : data?.map((post) => (
-                <div className={styles.post} key={post._id}>
-                  <div className={styles.imgContainer}>
-                    <Image className={styles.img} src={post.img} alt="" width={200} height={100} />
-                  </div>
-                  <h2 className={styles.postTitle}>{post.title}</h2>
-                  <span
-                    className={styles.delete}
-                    onClick={() => handleDelete(post._id)}
-                  >
-                    X
-                  </span>
-                </div>
-              ))}
-        </div>
+  
         <form className={styles.new} onSubmit={handleSubmit}>
-          <h1>Añadir un nuevo post</h1>
+          <h1 className={styles.title}>Añadir un nuevo post</h1>
           <input type="text" placeholder="Titulo" className={styles.input} />
           <input type="text" placeholder="Descripción" className={styles.input} />
           <input type="text" placeholder="Imagen url" className={styles.input} />
@@ -123,6 +105,34 @@ const Dashboard = () => {
           ></textarea>
           <button className={styles.button}>Enviar</button>
         </form>
+        <div className={styles.posts}>
+          <h2 className={styles.title}>Tus publicaciones:</h2>
+          {isLoading
+            ? <Loading></Loading>
+            : data?.map((post) => (
+                <div className={styles.post} key={post._id}>
+                  <div className={styles.imgContainer}>
+                    <Image className={styles.img} src={post.img} alt="" width={200} height={100} />
+                  </div>
+                  <div className={styles.contentPost}>
+
+                  <h2 className={styles.postTitle}>{post.title}</h2>
+                 <div className={styles.centeredButton}>
+
+                 <button className={styles.deletebutton}>
+
+                  <span
+                    className={styles.delete}
+                    onClick={() => handleDelete(post._id)}
+                    >
+                    X
+                  </span>
+                      </button>
+                    </div>
+                      </div>
+                </div>
+              ))}
+        </div>
       </div>
     );
   }
