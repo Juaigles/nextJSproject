@@ -36,7 +36,14 @@ const Dashboard = () => {
 
   const session = useSession();
 
+
   const router = useRouter();
+
+  useEffect(()=>{
+    if (session.status === "unauthenticated") {
+      router?.push("/dashboard/login");
+    }
+  },[session.status, router])
   
   //NEW WAY TO FETCH DATA
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -48,9 +55,7 @@ const Dashboard = () => {
 
 
 
-  if (session.status === "unauthenticated") {
-    router?.push("/dashboard/login");
-  }
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -103,10 +108,13 @@ const Dashboard = () => {
             cols="30"
             rows="10"
           ></textarea>
+          <div className={styles.centeredButton}>
+
           <button className={styles.button}>Enviar</button>
+          </div>
         </form>
         <div className={styles.posts}>
-          <h2 className={styles.title}>Tus publicaciones:</h2>
+          <h2 className={styles.title}> Tus publicaciones:</h2>
           {isLoading
             ? <Loading></Loading>
             : data?.map((post) => (
@@ -117,7 +125,7 @@ const Dashboard = () => {
                   <div className={styles.contentPost}>
 
                   <h2 className={styles.postTitle}>{post.title}</h2>
-                 <div className={styles.centeredButton}>
+                 <div className={styles.deleteButtonDiv}>
 
                  <button className={styles.deletebutton}>
 

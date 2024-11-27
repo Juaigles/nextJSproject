@@ -21,7 +21,7 @@ const About = () => {
                     className={styles.img}
                     src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     fill={true}
-                    alt=''
+                    alt='cabecera'
                 />
                 <div className={styles.imgText}>
                     <h1 className={styles.imgTitle}>Juan María Iglesias Mateos</h1>
@@ -154,7 +154,7 @@ const About = () => {
                             <div className={styles.downloadField}>
                                 <div className={styles.gallery}>
 
-                                    <Image className={styles.cvPhoto} src={image.cv} width={600} height={700} />
+                                    <Image className={styles.cvPhoto} src={image.cv} alt='cv' width={600} height={700} />
 
                                     <div className={styles.centeredText}>
 

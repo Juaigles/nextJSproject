@@ -2,7 +2,7 @@
 
 import { notFound, useParams } from 'next/navigation';
 import { items } from './data';
-import styles  from './page.module.css'
+import styles from './page.module.css'
 import ImageGallery from '@/components/ImageGallery/ImageGallery';
 import Link from 'next/link';
 
@@ -39,19 +39,19 @@ const DetailPage = () => {
       <h1 className={styles.title}>{data.title}</h1>
       <div className={styles.links}>
 
-{data.repo? <Link href={data.repo} className={styles.link}>Ver repositorio GitHub</Link>: <h2>(En desarrollo)</h2>}
-{data.url? <Link href={data.url} className={styles.link}>Visitar la web</Link>: null}
-</div>
+        {data.repo ? <Link href={data.repo} className={styles.link}>Ver repositorio GitHub</Link> : <h2>(En desarrollo)</h2>}
+        {data.url ? <Link href={data.url} className={styles.link}>Visitar la web</Link> : null}
+      </div>
       <p className={styles.desc}>{data.desc}</p>
       {console.log(images)}
-      
+
       <ImageGallery images={images} />
       <h3 className={styles.subtitle}>Caracteristicas del proyecto:
       </h3>
       <ul className={styles.ul}>
 
-        {features.map((feature) => (
-          <li className={styles.li}>
+        {features.map((feature, index) => (
+          <li key={index} className={styles.li}>
             {feature}
           </li>
         ))}

@@ -19,11 +19,12 @@ const getData = (cat) => {
 }
 
 const Category = ({ params }) => {
-  const data = getData(params.category)
-  console.log(data)
+  const {category} = React.use(params)
+  const data = getData(category)
+  console.log("La data segun categoria",data)
   return (
     <div className={styles.container}>
-      <h1 className={styles.catTitle}>{params.category}</h1>
+      <h1 className={styles.catTitle}>{category}</h1>
       {data.map(item => (
         <div className={styles.newitem} key={item.id}>
           <div className={styles.newTitleDiv}>
@@ -31,7 +32,7 @@ const Category = ({ params }) => {
           </div>
           <div className={styles.centeredImg}>
 
-            <div className={params.category == 'applications' ? styles.photoApp : styles.newImgContainer}>
+            <div className={category == 'applications' ? styles.photoApp : styles.newImgContainer}>
               <Image
                 className={styles.newimg}
                 width={500}
@@ -43,7 +44,7 @@ const Category = ({ params }) => {
           </div>
           <div className={styles.newBody}>
             <div className={styles.newcontent}>
-              <div className={params.category == "applications" ? styles.desarrollo :styles.newlinks}>
+              <div className={category == "applications" ? styles.desarrollo :styles.newlinks}>
 
                 <div>{item.repo ? <Link href={item.repo} className={styles.link}>Ver repositorio GitHub</Link> : <h2>(En desarrollo)</h2>}</div>
                 <div>              {item.url ? <Link href={item.url} className={styles.link}>Visitar la web</Link> : null}</div>

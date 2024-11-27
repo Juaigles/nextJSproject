@@ -8,6 +8,7 @@ import { Loading } from "@/components/Loading/Loading";
 
 const Login = ({ url }) => {
   const session = useSession();
+  const status = session.status
   const router = useRouter();
   const params = useSearchParams();
   const [error, setError] = useState("");
@@ -18,18 +19,24 @@ const Login = ({ url }) => {
     setSuccess(params.get("success"));
   }, [params]);
 
-  if (session.status === "loading") {
+  useEffect(() =>{
+    if(status === 'authenticated'){
+      router?.push("/dashboard");
+    }
+  },[status, router])
+
+  if (status === "loading") {
     return <Loading></Loading>;
   }
 
-  if (session.status === "authenticated") {
-    router?.push("/dashboard");
-  }
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target[0].value;
     const password = e.target[1].value;
+
+    
 
     signIn("credentials", {
       email,
@@ -57,9 +64,9 @@ const Login = ({ url }) => {
             required
             className={styles.input}
           />
-        </form>
-        <button className={styles.button}>Iniciar Sesión</button>
+        <button type="submit" className={styles.button}>Iniciar Sesión</button>
         {error && error}
+        </form>
         <button
           onClick={() => {
             signIn("google");

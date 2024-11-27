@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
-import Hero from 'public/hero.png'
+
 import Button from '@/components/Button/Button';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       </div>
       <div className={styles.item}>
 
-        <Image src={Hero} alt='Hero Image' className={styles.img} />
+        <Image src="/hero.png" width={1080} height={720} alt='Hero Image' className={styles.img} />
       </div>
     </div>
 
