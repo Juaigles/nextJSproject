@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const res = await fetch("https://final-portafolio-juanmaria.vercel.app/api/posts", {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/posts`, {
     cache: "no-store",
   });
 
