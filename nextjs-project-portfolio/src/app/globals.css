@@ -15,6 +15,10 @@
   --link-hover-color: #53c28b;
 }
 
+
+.build{
+
+}
 [data-theme="light"] {
   /* Colores del tema claro */
   --background-color: white;
