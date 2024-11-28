@@ -1,0 +1,14 @@
+{
+    "functions": {
+      "api/post.js": {
+        "regions": ["iad1", "fra1"] 
+      },
+      "api/auth/[...nextauth].js": {
+        "regions": ["iad1", "fra1"] 
+      },
+      "api/auth/login.js": {
+        "regions": ["iad1", "fra1"] 
+      }
+    }
+  }
+  
