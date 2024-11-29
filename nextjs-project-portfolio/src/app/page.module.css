@@ -1,10 +1,12 @@
 .home{
 
- height: 100vh;
+ height: 80vh;
+ 
 }
 .container{
   height: 100%;
   width: 100%;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,16 +96,24 @@
 
 }
 @media(max-width: 480px){
-  .home{
+.home{
+  height: 80vh;
 
- 
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
   .container{
 
     gap: 5px;
     display: grid;
     justify-content: center;
     align-items: center;
+
+    height: fit-content;
+   
+    
     
     
   }
