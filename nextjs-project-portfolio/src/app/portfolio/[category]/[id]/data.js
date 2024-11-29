@@ -131,7 +131,7 @@ export const items = {
         id: 1,
         category: "website",
         repo:"https://github.com/Juaigles/nextJSproject",
-        url:"https://www.vtcsuchoferpersonal.com",
+        url:"https://wwww.jotadev.info",
         title: "Portafolio Juan María Iglesias Mateos",
         desc: "Esta es mi página web-portafolio para facilitar la visibilidad de los proyectos donde he trabajado o en los que aun estoy trabajando. ", 
         considerations:"Este proyecto ha sido el que mas me ha ayudado a comprender la estructura de rutas dinamicas con App Router, el uso de bases de datos con Next o el servicio de autenticacion con Google.",
@@ -148,97 +148,97 @@ export const items = {
         
         image:{
           1:{
-            src: "/webProjects/portfolio-home.png",
+            src: "/webProjects/portfolio/desktop/portfolio-home.png",
             alt: "portfolio-home",
             text:"Página Home tamaño Desktop con el tema oscuro"
           },
           19:{
-            src: "/webProjects/homeBlackMobile.png",
+            src: "/webProjects/portfolio/mobile/homeBlackMobile.png",
             alt: "portfolio-homeMobile",
             text:"Página Home tamaño Mobile con el tema oscuro",
             cat:"app"
           },
          
           2:{
-            src: "/webProjects/portfolio-blanco-home.png",
+            src: "/webProjects/portfolio/desktop/portfolio-blanco-home.png",
             alt: "blanco-home",
             text:"Página Home tamaño Desktop con el tema blanco"
           },
           20:{
-            src: "/webProjects/homeWhiteMobile.png",
+            src: "/webProjects/portfolio/mobile/homeWhiteMobile.png",
             alt: "portfolio-homeMobile",
             text:"Página Home tamaño Mobile con el tema oscuro",
             cat:"app"
           },
     
           4:{
-            src: "/webProjects/portfolio-portfolio.png",
+            src: "/webProjects/portfolio/desktop/portfolio-portfolio.png",
             alt: "portfolio",
             text :"Página general del portafolio tamaño Desktop"
           },
           11:{
-            src: "/webProjects/portafolioMobile.png",
+            src: "/webProjects/portfolio/mobile/portafolioMobile.png",
             alt: "portfolio-homeMobile",
             text:"Página de categorías del portafolio en tamaño mobile",
             cat:"app"
           },
           5:{
-            src: "/webProjects/portfolio-trabajos.png",
+            src: "/webProjects/portfolio/desktop/portfolio-trabajos.png",
             alt: "trabajos",
             text:"Página de mis trabajos 'Website' del portafolio en tamaño Desktop",
           },
           12:{
-            src: "/webProjects/portafolioCat.png",
+            src: "/webProjects/portfolio/mobile/portafolioCat.png",
             alt: "portfolio-homeMobile",
             text:"Página categoria de mis trabajos 'Website' tamaño Mobile",
             cat:"app"
           },
           6:{
-            src: "/webProjects/portfolio-trabajos-proyecto.png",
+            src: "/webProjects/portfolio/desktop/portfolio-trabajos-proyecto.png",
             alt: "proyectos",
             text:"Página resumen del proyecto seleccionado tamaño Desktop"
           },  13:{
-            src: "/webProjects/misTrabajosMobile.png",
+            src: "/webProjects/portfolio/mobile/misTrabajosMobile.png",
             alt: "portfolio-homeMobile",
             text:"Página resumen del proyecto seleccionado tamaño Mobile",
             cat:"app"
           },
           7:{
-            src: "/webProjects/portfolio-login.png",
+            src: "/webProjects/portfolio/desktop/portfolio-login.png",
             alt: "portfolio-login",
             text:"Página de inicio de sesión tamaño Desktop"
           },
           8:{
-            src: "/webProjects/dashBoardDesktop.png",
+            src: "/webProjects/portfolio/desktop/dashBoardDesktop.png",
             alt: "portfolio-blog-ejemplo",
             text: "Página de dasboard tamaño Desktop"
           },
         
         
           9:{
-            src: "/webProjects/blogPostDesktop.png",
+            src: "/webProjects/portfolio/desktop/blogPostDesktop.png",
             alt: "portfolio-blog-general",
             text: "Página general del Blog tamaño Desktop"
           },  14:{
-            src: "/webProjects/blogPostMobile.png",
+            src: "/webProjects/portfolio/mobile/blogPostMobile.png",
             alt: "portfolio-homeMobile",
             text:"Página del blog general tamaño Mobile",
             cat:"app"
           },
           10:{
-            src: "/webProjects/blogDesktop.png",
+            src: "/webProjects/portfolio/desktop/blogDesktop.png",
             alt: "portfolio-blog-ejemplo",
             text: "Página de artículo del blog en tamaño Desktop"
           },
           
           11:{
-            src: "/webProjects/portfolio-blanco.png",
+            src: "/webProjects/portfolio/desktop/portfolio-blanco.png",
             alt: "portfolio-blanco",
             text:"Pagina de la categoria Juegos con el tema blanco"
           },
       
           18:{
-            src: "/webProjects/crearPostMobile.png",
+            src: "/webProjects/portfolio/mobile/crearPostMobile.png",
             alt: "portfolio-blog-ejemplo",
             text: "Página de dashboard tamaño Mobile",
             cat: "app"
@@ -298,7 +298,7 @@ export const items = {
             text:"Componente de reseñas de Google version Desktop"
           },
           6:{
-            src: "/webProjects/suchoBlogSeo.png",
+            src: "/webProjects/suChoferPersonal/desktop/suchoBlogSeo.png",
             alt: "suchoferpersonal-blog-SEO",
             text:"Componente de Blog para la mejora del SEO en la web"
           },

@@ -41,6 +41,7 @@ body {
   overflow-x: hidden;
   font-size: var(--font-size-base);
   margin-top: 35px;
+  overscroll-behavior: none;
 
 }
 
@@ -94,13 +95,13 @@ a{
 }
 
 
-@media (max-width: var(--breakpoint-sm)) {
+@media (max-width: 480px) {
   html{
     font-size: 12px;
   }
   .container {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 10px 40px;
     gap: 10px; /* Espaciado interno entre elementos del container */
     flex-direction: column; /* Garantiza un flujo vertical */
     align-items: center; /* Centra los elementos, si aplica */

@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .item{
@@ -96,10 +96,10 @@
 @media(max-width: 480px){
   .home{
 
-    margin-top: 0px;
+ 
   }
   .container{
-  margin-top: 10%;
+
     gap: 5px;
     display: grid;
     justify-content: center;
