@@ -51,7 +51,7 @@ const Contact = () => {
               required
             ></textarea>
             <div className={styles.centeredButon}>
-              <button type="submit" text="Enviar" />
+              <button className={styles.button} type="submit"  >Enviar</button>
             </div>
           </form>
         </div>
