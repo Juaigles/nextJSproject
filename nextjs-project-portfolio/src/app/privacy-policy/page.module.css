@@ -1,0 +1,57 @@
+.container{
+padding: 50px;
+    font-size: 1.5rem;
+    width: 80vw;
+}
+
+
+.container p {
+    margin: 20px 0;
+}
+
+.container ul {
+    margin-left: 100px;
+    display: grid;
+    gap: 15px;
+    
+}
+
+.container h2{
+    margin-bottom: 20px;
+}
+
+.content{
+    display: grid;
+    gap: 50px;
+}
+
+
+@media (max-width: 480px) {
+    .container{
+        padding: 10px;
+            font-size: 1.5rem;
+            width: 80vw;
+        }
+        
+        
+        .container p {
+            margin: 10px 0;
+        }
+        
+        .container ul {
+            margin-left: 40px;
+            display: grid;
+            gap: 15px;
+            
+        }
+        
+        .container h2{
+            margin-bottom: 15px;
+        }
+        
+        .content{
+            display: grid;
+            gap: 40px;
+        }
+        
+}
