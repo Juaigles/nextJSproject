@@ -154,13 +154,13 @@ const About = () => {
                             <div className={styles.downloadField}>
                                 <div className={styles.gallery}>
 
-                                    <Image className={styles.cvPhoto} src={image.cv} alt='cv' width={600} height={700} />
+                                    <Image className={styles.cvPhoto} src={image.cv} alt='cv' width={600} height={800} />
 
                                     <div className={styles.centeredText}>
 
                                         <div className={styles.button}>
 
-                                            <Link href="/document/cv.pdf" download>Descargar</Link>
+                                            <Link href="/document/cv_2024_es_code4jobs.pdf" download>Descargar</Link>
                                         </div>
                                     </div>
                                 </div>

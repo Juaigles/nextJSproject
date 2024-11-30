@@ -38,6 +38,6 @@ export const image = {
     text: "Certificado Bootcamp FullStack (MERN) en Code4Jobs",
     button: "bootcamp.pdf",
   },
-  "cv": "/certificates/cv.jpg"
+  "cv": "/document/cv_2024_es_code4jobs.png"
 
 }
