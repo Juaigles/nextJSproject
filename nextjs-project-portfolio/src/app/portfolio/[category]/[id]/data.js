@@ -130,120 +130,47 @@ export const items = {
       {
         id: 1,
         category: "website",
-        repo:"https://github.com/Juaigles/nextJSproject",
-        url:"https://wwww.jotadev.info",
-        title: "Portafolio Juan María Iglesias Mateos",
-        desc: "Esta es mi página web-portafolio para facilitar la visibilidad de los proyectos donde he trabajado o en los que aun estoy trabajando. ", 
-        considerations:"Este proyecto ha sido el que mas me ha ayudado a comprender la estructura de rutas dinamicas con App Router, el uso de bases de datos con Next o el servicio de autenticacion con Google.",
+        repo:"https://github.com/Juaigles/videogame-search-engine",
+        url:"",
+        title: "Motor de Búsqueda Indexada",
+        desc: "Proyecto de Motor de Búsqueda Indexada para videjuegos con filtros categrorias y ordenamiento, conectado a la API de RAWG. ", 
+        considerations:" Crear un motor de búsqueda funcional y dinámico que permita a los usuarios explorar videojuegos utilizando una interfaz intuitiva y criterios de búsqueda personalizados.",
         project_features: {
-            1: "Web moderna y actual: Desarrollo con Next 14 con AppRouter y MongoDB.",
-             2: "Estilos: CSS a traves de la exportación de modulos.",
-             4: "Blog Interno para SEO: Desarrollo de un blog interno como herramienta estratégica para mejorar el posicionamiento en motores de búsqueda (SEO). Requiere de Login para postear artículos",
-             5: "Sistema de registro de usuarios controlando errores y sistema de login manual o con la cuenta de Google",
-             6: "Resumen de mis principales proyectos finalizados y en desarrollo con vinculo a GitHub",
-             7: "Botón para cambiar entre tema claro o tema oscuro para la web de forma global",
+            1: "Frontend y Backend combinados con Next.js",
+             2: "Resultados en tiempo real mediante el uso de API dinámicas RAWG",
+             4: "Búsqueda de videojuegos basada en palabras clave (nombre, género, plataforma)",
+             5: "Filtros avanzados para refinar resultados (géneros, fecha de lanzamiento, calificaciones).",
+             6: "Desarrollado con TypeScript como primer proyecto de práctica con este lenguaje.",
+             7: "Proximamente gestion de la API a una base de datos para mejorar las búsquedas y resultados indexados",
 
         },
         
         
         image:{
           1:{
-            src: "/webProjects/portfolio/desktop/portfolio-home.png",
-            alt: "portfolio-home",
-            text:"Página Home tamaño Desktop con el tema oscuro"
+            src: "/webProjects/searchGameEngine/home.png",
+            alt: "sge-home",
+            text:"Página principal con los juegos mas populares de inicio."
           },
-          19:{
-            src: "/webProjects/portfolio/mobile/homeBlackMobile.png",
-            alt: "portfolio-homeMobile",
-            text:"Página Home tamaño Mobile con el tema oscuro",
-            cat:"app"
+          2:{
+            src: "/webProjects/searchGameEngine/buscador.png",
+            alt: "buscador",
+            text:"Buscador por nombre con resultados ordenado por popularidad",
+            
           },
          
-          2:{
-            src: "/webProjects/portfolio/desktop/portfolio-blanco-home.png",
-            alt: "blanco-home",
-            text:"Página Home tamaño Desktop con el tema blanco"
+          3:{
+            src:"/webProjects/searchGameEngine/categorias.png",
+            alt: "categoria",
+            text:"Listado de categorías para filtrar (plataforma, temática)"
           },
-          20:{
-            src: "/webProjects/portfolio/mobile/homeWhiteMobile.png",
+          4:{
+            src:"/webProjects/searchGameEngine/filtros.png",
             alt: "portfolio-homeMobile",
-            text:"Página Home tamaño Mobile con el tema oscuro",
-            cat:"app"
+            text:"Sistema de ordenamiento como (popularidad, fecha, metacritic, alfabético)",
+          
           },
     
-          4:{
-            src: "/webProjects/portfolio/desktop/portfolio-portfolio.png",
-            alt: "portfolio",
-            text :"Página general del portafolio tamaño Desktop"
-          },
-          11:{
-            src: "/webProjects/portfolio/mobile/portafolioMobile.png",
-            alt: "portfolio-homeMobile",
-            text:"Página de categorías del portafolio en tamaño mobile",
-            cat:"app"
-          },
-          5:{
-            src: "/webProjects/portfolio/desktop/portfolio-trabajos.png",
-            alt: "trabajos",
-            text:"Página de mis trabajos 'Website' del portafolio en tamaño Desktop",
-          },
-          12:{
-            src: "/webProjects/portfolio/mobile/portafolioCat.png",
-            alt: "portfolio-homeMobile",
-            text:"Página categoria de mis trabajos 'Website' tamaño Mobile",
-            cat:"app"
-          },
-          6:{
-            src: "/webProjects/portfolio/desktop/portfolio-trabajos-proyecto.png",
-            alt: "proyectos",
-            text:"Página resumen del proyecto seleccionado tamaño Desktop"
-          },  13:{
-            src: "/webProjects/portfolio/mobile/misTrabajosMobile.png",
-            alt: "portfolio-homeMobile",
-            text:"Página resumen del proyecto seleccionado tamaño Mobile",
-            cat:"app"
-          },
-          7:{
-            src: "/webProjects/portfolio/desktop/portfolio-login.png",
-            alt: "portfolio-login",
-            text:"Página de inicio de sesión tamaño Desktop"
-          },
-          8:{
-            src: "/webProjects/portfolio/desktop/dashBoardDesktop.png",
-            alt: "portfolio-blog-ejemplo",
-            text: "Página de dasboard tamaño Desktop"
-          },
-        
-        
-          9:{
-            src: "/webProjects/portfolio/desktop/blogPostDesktop.png",
-            alt: "portfolio-blog-general",
-            text: "Página general del Blog tamaño Desktop"
-          },  14:{
-            src: "/webProjects/portfolio/mobile/blogPostMobile.png",
-            alt: "portfolio-homeMobile",
-            text:"Página del blog general tamaño Mobile",
-            cat:"app"
-          },
-          10:{
-            src: "/webProjects/portfolio/desktop/blogDesktop.png",
-            alt: "portfolio-blog-ejemplo",
-            text: "Página de artículo del blog en tamaño Desktop"
-          },
-          
-          11:{
-            src: "/webProjects/portfolio/desktop/portfolio-blanco.png",
-            alt: "portfolio-blanco",
-            text:"Pagina de la categoria Juegos con el tema blanco"
-          },
-      
-          18:{
-            src: "/webProjects/portfolio/mobile/crearPostMobile.png",
-            alt: "portfolio-blog-ejemplo",
-            text: "Página de dashboard tamaño Mobile",
-            cat: "app"
-          },
-
       
         
         }

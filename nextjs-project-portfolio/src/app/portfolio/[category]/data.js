@@ -39,14 +39,14 @@ export const items = {
     websites: [
       {
         id: 1,
-        title: "Portafolio Juan María Iglesias Mateos",
-        repo:"https://github.com/Juaigles/nextJSproject",
-        url:"https://www.vtcsuchoferpersonal.com",
-        desc: "Mi portafolio web crado con Next14 y MongoDB con mongoose.",
+        title: "Mótor de Búsqueda Indexada",
+        repo:"https://github.com/Juaigles/videogame-search-engine",
+        url:"",
+        desc: "Proyecto de Motor de Búsqueda Indexada para videjuegos con filtros categrorias y ordenamiento, conectado a la API de RAWG.",
         category: "website",
         
         image:
-          "/webProjects/portfolio/desktop/portfolio-home.png",
+          "/webProjects/searchGameEngine/home.png",
       },
       {
         id: 2,

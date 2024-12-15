@@ -101,7 +101,7 @@ const Dashboard = () => {
           <h1 className={styles.title}>Añadir un nuevo post</h1>
           <input type="text" placeholder="Titulo" className={styles.input} />
           <input type="text" placeholder="Descripción" className={styles.input} />
-          <input type="text" placeholder="Imagen url" className={styles.input} />
+          <input type="text" placeholder="Imagen url (Sólo urls de la página Pexels)" className={styles.input} />
           <textarea
             placeholder="Contenido"
             className={styles.textArea}
