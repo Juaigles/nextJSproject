@@ -46,7 +46,7 @@ export const items = {
         category: "website",
         
         image:
-          "/webProjects/searchGameEngine/home.png",
+          "/webProjects/searchGameEngine/home2.png",
       },
       {
         id: 2,

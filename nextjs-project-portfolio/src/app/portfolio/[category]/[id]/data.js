@@ -148,7 +148,7 @@ export const items = {
         
         image:{
           1:{
-            src: "/webProjects/searchGameEngine/home.png",
+            src: "/webProjects/searchGameEngine/home2.png",
             alt: "sge-home",
             text:"Página principal con los juegos mas populares de inicio."
           },
@@ -160,7 +160,7 @@ export const items = {
           },
          
           3:{
-            src:"/webProjects/searchGameEngine/categorias.png",
+            src:"/webProjects/searchGameEngine/categorias2.png",
             alt: "categoria",
             text:"Listado de categorías para filtrar (plataforma, temática)"
           },
