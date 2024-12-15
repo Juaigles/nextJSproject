@@ -360,27 +360,30 @@
 
 @media (max-width: 480px) {
     
-    .container h1{
-        text-align: center;
-    }
     .container h2 {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
-    .container h2, .container h3{
-        text-align: center;
-    }
+  
 
     .container p,.container li{
         font-size: 1.5rem;
-        text-align: left;
+        text-align: center;
     }
     .container{
-        margin: 0;
+        text-align: center;
+       width: 100vw;
+       padding: 10%;
+      
     }
     .ul{
         margin: 0;
-        padding: 0;
+        padding: 20px;
+    
         
+    }
+    .skills{
+        border: 1px solid var(--primary-color);
+        padding: 10%;
     }
 
     .textContainer {
@@ -395,11 +398,13 @@
 
 
     .studiesContainer {
-        border: none;
+
+        border: solid var(--primary-color) 1px;
         display: grid;
         justify-content: center;
         align-items: center;
-        padding: 0 100px;
+        padding: 10%;
+        margin: 20px;
         
       
     }

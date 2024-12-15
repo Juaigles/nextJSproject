@@ -66,14 +66,14 @@ const Login = () => {
           </button>
           {error && <p className={styles.error}>{error}</p>}
         </form>
-        <button
+        {/* <button
           onClick={() => {
             signIn("google");
           }}
           className={`${styles.button} ${styles.google}`}
         >
           Inicia sesión con Google
-        </button>
+        </button> */}
         <div className={styles.links}>
           <div className={styles.linksCentered}>
             <span className={styles.or}>- O -</span>
