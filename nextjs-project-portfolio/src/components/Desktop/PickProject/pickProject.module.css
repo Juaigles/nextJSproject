@@ -1,0 +1,92 @@
+
+
+/* Estilo base para las tarjetas */
+.card {
+    display: flex;
+    gap: 20px; /* Espacio entre imagen y contenido dentro de la tarjeta */
+    width: 100%;
+    height: 60vh;
+    border: var(--primary-color) 2px solid;
+    border-radius: 20px;
+
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.4); /* Sombra verde */
+    padding: 40px;
+
+}
+
+/* Alternar direcciones para pares e impares */
+.card:nth-child(odd) {
+    flex-direction: row-reverse; /* Imagen a la derecha para pares */
+}
+
+.card:nth-child(even) {
+    flex-direction: row; /* Imagen a la izquierda para impares */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.img {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    position: relative; /* Necesario para que funcione layout="fill" en next/image */
+    width: 100%;
+ 
+}
+
+/* Contenedor del contenido textual dentro de la tarjeta */
+.content {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px; /* Espaciado entre elementos internos */
+}
+
+/* Estilo para el título */
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo para la descripción */
+.description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de las tecnologías dentro de la tarjeta */
+.tecs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px; /* Espacio entre los logos */
+    flex-wrap: wrap; /* Permite que los logos pasen a la siguiente línea si es necesario */
+}
+
+/* Cada tecnología individual */
+.tec {
+    flex: 0 1 20%; /* Los logos ocupan hasta el 20% del contenedor, sin crecer desproporcionadamente */
+    max-width: 100px; /* Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    aspect-ratio: 1 / 1; /* Hace que los contenedores sean cuadrados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Imagen dentro de cada tecnología */
+.tec img {
+    width: 100%; /* La imagen se ajusta al contenedor */
+    height: 100%;
+    object-fit: contain; /* Evita que la imagen se deforme */
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

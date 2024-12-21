@@ -226,7 +226,7 @@
 @media (max-width: 480px) {
   .carousel {
     display: grid;
-
+font-size: 1rem;
     width: 100%;
     /* Ocupa el ancho completo */
 

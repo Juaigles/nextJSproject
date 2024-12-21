@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    gap: 40px;
+    gap: 10vh;
     padding-bottom: 50px;
 }
 
@@ -24,6 +24,12 @@
     justify-content: center;
 
 }
+
+.projects{
+    display: grid;
+    gap: 20vh;
+}
+
 
 
 
@@ -144,6 +150,7 @@
 
     }
 
+
     .container {
 
         display: grid;
@@ -174,7 +181,6 @@
         text-align: center;
     }
 
-    .centeredImg {}
 
     .newImgContainer {
 border: none;

@@ -1,12 +1,15 @@
 "use client"
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './page.module.css';
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
 import { items } from "./data.js";
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import ProjectCard from '@/components/Mobile/ProjectCards/ProjectCard';
+import PickProject from '@/components/Desktop/PickProject/PickProject';
+import useBreakpoint from '@/components/hooks/useBreakpoint/useBreakpoint';
 
 const getData = (cat) => {
   const data = items[cat]
@@ -19,12 +22,39 @@ const getData = (cat) => {
 }
 
 const Category = ({ params }) => {
+  const isMobile = useBreakpoint(1060)
   const {category} = React.use(params)
   const data = getData(category)
-  console.log("La data segun categoria",data)
+
+
+
+
   return (
     <div className={styles.container}>
       <h1 className={styles.catTitle}>{category}</h1>
+      <div className={styles.projects}>
+
+      {
+        data.map(item => (
+          isMobile ? (
+
+              <ProjectCard key={item.id} props={item} />
+          ) : (
+            <PickProject key={item.id} props={item}/>
+          )
+          
+          
+          
+          
+        ))
+      }
+      </div>
+
+    
+
+
+
+{/*       
       {data.map(item => (
         <div className={styles.newitem} key={item.id}>
           <div className={styles.newTitleDiv}>
@@ -62,7 +92,7 @@ const Category = ({ params }) => {
           </div>
 
         </div>
-      ))}
+      ))} */}
 
 
 

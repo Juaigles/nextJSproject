@@ -1,0 +1,35 @@
+.animated {
+    opacity: 0;
+    transform: translateY(20px); /* Modifica según la animación */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+/* animations.module.css */
+.fadeUp {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+
+  
+  .jump {
+    animation: shake 1.5s linear;
+  }
+  
+  .jump-in {
+
+    animation: jumpIn 0.5s ease-in;
+  }
+
+  
+  /* Define keyframes if necessary */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+  }
+  
+  @keyframes jumpIn {
+    0% { opacity: 0; transform: scale(0.1); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  

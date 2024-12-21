@@ -8,8 +8,9 @@ export const items = {
         
         desc: "Aplicación mobil multiplataforma desarrollada en flutter, orientada a ofrecer un servicio personalizado de VTC en Salamanca.",
         category: "app",
+        tecs: ["flutter", ],
         image:
-          "/app_images/app-login.png",
+          "/app_images/app-register.png",
       },
 
     ],
@@ -21,6 +22,7 @@ export const items = {
         repo:"",
         url:"",
         category: "game",
+        tecs: ["godot" ],
         image:
           "/games/space-blast-intro.png",
       },
@@ -31,6 +33,7 @@ export const items = {
         url:"",
         desc: "Juego 3D de terror actualmente en desarrollo en Unity 6, con una simple mecánica de encendido y apagado de linterna que modifica la realidad y lo que el jugador ve, con la finalidad de resolver puzzles y enigmas para avanzar.",
         category: "game",
+        tecs: ["unity", ],
         image:
           "/games/terror1.png",
       },
@@ -42,11 +45,12 @@ export const items = {
         title: "Mótor de Búsqueda Indexada",
         repo:"https://github.com/Juaigles/videogame-search-engine",
         url:"",
-        desc: "Proyecto de Motor de Búsqueda Indexada para videjuegos con filtros categrorias y ordenamiento, conectado a la API de RAWG.",
+        desc: "Proyecto de Motor de Búsqueda Indexada para videojuegos con filtros categrorias y ordenamiento, conectado a la API de RAWG.",
         category: "website",
+        tecs: ["ts","react", "next", ],
         
         image:
-          "/webProjects/searchGameEngine/home2.png",
+          "/webProjects/searchGameEngine/buscador.png",
       },
       {
         id: 2,
@@ -55,6 +59,7 @@ export const items = {
         url:"https://www.vtcsuchoferpersonal.com",
         desc: "Página web dedicada a la información de servicios de VTC y taxi en la ciudad de Salamanca. Pagina desarrollada en Next 14, desplegada en Vercel. ",
         category: "website",
+        tecs:  ["js","react", "next","tailwind"],
         
         image:
           "/webProjects/suChoferPersonal/desktop/sucho-hero-desktop.png",
@@ -66,6 +71,7 @@ export const items = {
         url:"",
         desc: "Web-app para la gestión de tareas con previo registro de usuario y base de datos que las almacena. Desarrollado en Vite con Express y Mongoose.",
         category: "website",
+        tecs:  ["js","react", "next", "mongodb"],
         image:
           "/webProjects/taskManager/login-task-manager.png",
       },
@@ -76,6 +82,7 @@ export const items = {
         url:"",
         desc: "Web-app para la gestion visual de metas y objetivos. Con porcentaje segun progreso en la meta, y gestión de las metas con sistema CRUD.",
         category: "website",
+        tecs:  ["js","react", "next", "tailwind"],
         image:
           "/webProjects/metasApp/editar-metas.png",
       }
