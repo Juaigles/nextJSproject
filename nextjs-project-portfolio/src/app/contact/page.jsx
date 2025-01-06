@@ -4,6 +4,7 @@ import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import Button from '@/components/Button/Button'
+import Link from 'next/link'
 
 
 const Contact = () => {
@@ -32,7 +33,7 @@ const Contact = () => {
       <div className={styles.content}>
         <div className={styles.imgContainer}>
           <Image
-            src='/contact.png'
+            src='/contact2.png'
             fill={true}
             className={styles.image}
             alt='contact'
@@ -56,6 +57,9 @@ const Contact = () => {
           </form>
         </div>
       </div>
+    <Link href="https://storyset.com/business">Business illustrations by Storyset</Link>
+    
+
     </div>
   )
 }

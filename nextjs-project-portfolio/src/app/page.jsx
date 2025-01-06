@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 import Button from '@/components/Button/Button';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -18,10 +19,10 @@ export default function Home() {
       </div>
       <div className={styles.item}>
 
-        <Image src="/hero.png" width={1080} height={720} alt='Hero Image' className={styles.img} />
+        <Image src="/hero3.png" width={1080} height={720} alt='Hero Image' className={styles.img} />
       </div>
     </div>
-
+    <Link href="https://storyset.com/work">Work illustrations by Storyset</Link>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 .container{
-    margin: 5%;
+    margin:  0 5% 0 5%;
   }
 
 .title{
@@ -28,6 +28,8 @@
   color: white;
 }
 .image{
+
+
   object-fit: contain;
   animation: move 3s infinite ease alternate;
 }
