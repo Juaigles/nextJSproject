@@ -149,7 +149,7 @@ const About = () => {
 
                             </div>
                         </div>
-                        <div className={styles.cv}>
+                        {/* <div className={styles.cv}>
                             <h3 className={styles.centeredText}>Mi Curriculum Vitae:</h3>
                             <div className={styles.downloadField}>
                                 <div className={styles.gallery}>
@@ -165,7 +165,7 @@ const About = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
