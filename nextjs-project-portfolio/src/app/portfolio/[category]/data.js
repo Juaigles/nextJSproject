@@ -42,18 +42,6 @@ export const items = {
     websites: [
       {
         id: 1,
-        title: "Mótor de Búsqueda Indexada",
-        repo:"https://github.com/Juaigles/videogame-search-engine",
-        url:"",
-        desc: "Proyecto de Motor de Búsqueda Indexada para videojuegos con filtros categrorias y ordenamiento, conectado a la API de RAWG.",
-        category: "website",
-        tecs: ["ts","react", "next", ],
-        
-        image:
-          "/webProjects/searchGameEngine/buscador.png",
-      },
-      {
-        id: 2,
         title: "Taxi/VTC Su Chófer Personal",
         repo:"https://github.com/Juaigles/web-taxi-vtc-su-chofer-personal",
         url:"https://www.vtcsuchoferpersonal.com",
@@ -65,10 +53,35 @@ export const items = {
           "/webProjects/suChoferPersonal/desktop/sucho-hero-desktop.png",
       },
       {
+        id:2,
+        title: "Text Analyzer",
+        repo: "https://github.com/Juaigles/web-taxi-vtc-su-chofer-personal",
+  
+        url:null,
+        desc: "Applicacion web desarrollada con React de forma modular. Analiza el texto en tiempo real y cuenta los caracteres , palabras y frases. Y muestra una grafica con el porcentaje de uso de cada palabra.",
+
+        category:"website",
+        tecs:["js","react","tailwind"],
+        image: "/webProjects/textAnalyzer/images/web/text-analyzer.png"
+      },
+      {
         id: 3,
+        title: "Mótor de Búsqueda Indexada",
+        repo:"https://github.com/Juaigles/videogame-search-engine",
+        url:null,
+        desc: "Proyecto de Motor de Búsqueda Indexada para videojuegos con filtros categrorias y ordenamiento, conectado a la API de RAWG.",
+        category: "website",
+        tecs: ["ts","react", "next", ],
+        
+        image:
+          "/webProjects/searchGameEngine/buscador.png",
+      },
+
+      {
+        id: 4,
         title: "Task Manager con sistema de Login/Register",
         repo:"https://github.com/Juaigles/Personal-Task-Manager",
-        url:"",
+         url:null,
         desc: "Web-app para la gestión de tareas con previo registro de usuario y base de datos que las almacena. Desarrollado en Vite con Express y Mongoose.",
         category: "website",
         tecs:  ["js","react", "next", "mongodb"],
@@ -76,10 +89,10 @@ export const items = {
           "/webProjects/taskManager/login-task-manager.png",
       },
       {
-        id: 4,
+        id: 5,
         title: "Goals App con UI ",
         repo:"https://github.com/Juaigles/Focus-on-your-goals-APP",
-        url:"",
+        url:null,
         desc: "Web-app para la gestion visual de metas y objetivos. Con porcentaje segun progreso en la meta, y gestión de las metas con sistema CRUD.",
         category: "website",
         tecs:  ["js","react", "next", "tailwind"],

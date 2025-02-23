@@ -5,6 +5,7 @@ import { items } from './data';
 import styles from './page.module.css'
 import ImageGallery from '@/components/ImageGallery/ImageGallery';
 import Link from 'next/link';
+import Video from '@/components/video/Video';
 
 
 const getData = (cat, id) => {
@@ -44,8 +45,16 @@ const DetailPage = () => {
       </div>
       <p className={styles.desc}>{data.desc}</p>
       {console.log(images)}
-
+<div className=''>
+  
       <ImageGallery images={images} />
+      {data.video ?<div className={styles.video}>
+
+        <Video src={data.video.src} poster={data.video.poster} />
+
+      </div> 
+        : null}
+        </div>
       <h3 className={styles.subtitle}>Caracteristicas del proyecto:
       </h3>
       <ul className={styles.ul}>

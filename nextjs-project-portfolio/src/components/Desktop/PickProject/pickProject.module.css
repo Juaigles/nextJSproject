@@ -36,6 +36,7 @@
 .content {
     flex: 1; /* Ocupa la mitad del espacio disponible */
     padding: 10px;
+    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -68,7 +69,7 @@
 /* Cada tecnología individual */
 .tec {
     flex: 0 1 20%; /* Los logos ocupan hasta el 20% del contenedor, sin crecer desproporcionadamente */
-    max-width: 100px; /* Limita el tamaño máximo */
+    max-width: 70px; /* Limita el tamaño máximo */
     height: auto; /* Mantiene la proporción */
     aspect-ratio: 1 / 1; /* Hace que los contenedores sean cuadrados */
     display: flex;

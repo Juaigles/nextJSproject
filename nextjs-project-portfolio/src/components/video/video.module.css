@@ -1,0 +1,21 @@
+.component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    gap: 20px;
+}
+
+
+    @media (max-width: 1070px) {
+        .component{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5%;
+            gap: 20px;
+            max-width: 100%;
+        }
+    }

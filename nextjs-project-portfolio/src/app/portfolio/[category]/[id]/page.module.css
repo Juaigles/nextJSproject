@@ -60,8 +60,15 @@
     padding: 50px;
   }
 
-  @media(max-width: 1070px){
-
+  .video {
+      display: block;
+    }
+    
+    
+    @media(max-width: 1070px){
+        .video {
+        display: none;
+      }
     .container {
         display: flex;
 
