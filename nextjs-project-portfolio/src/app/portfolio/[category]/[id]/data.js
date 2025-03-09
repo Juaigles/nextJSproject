@@ -124,7 +124,7 @@ export const items = {
       id: 2,
       category: "website",
       repo: "https://github.com/Juaigles/prueba1",
-      url: "",
+      url: "https://text-counter-density-checker.vercel.app/",
       title: "Analizador de Texto",
       desc: "Proyecto basado en componente Figma para la parte IU/UX y desarrollado con React y Tailwind CSS. ",
       considerations:
